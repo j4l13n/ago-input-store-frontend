@@ -11,7 +11,7 @@ const About: React.FC = () => {
         high-quality fertilizers and seeds tailored to your needs. Our mission is to empower
         farmers with the tools they need to thrive in today&apos;s agricultural landscape.
       </p>
-      <button className="hover:border-1 hover:bg-gray-500 text-white border-1 text-xl font-bold py-4 px-8 rounded">
+      <button className="hover:border-1 hover:bg-green-600 text-white border-1 text-xl font-bold py-4 px-8 rounded">
         Let&apos;s get started!
       </button>
     </div>

@@ -60,3 +60,12 @@ body {
 .grid a:nth-child(4) {
   animation-delay: 0.4s;
 }
+
+.logo {
+  animation: spin 5s linear infinite; /* Spin animation */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

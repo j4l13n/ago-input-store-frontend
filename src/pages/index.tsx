@@ -1,10 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Inter } from "next/font/google";
 import Arrow from "@/components/Arrow/Arrow";
 import Rainbow from "@/components/Rainbow";
 import About from "@/components/About";
 import ServicesSection from "@/components/ServiceCard/ServiceCard";
-import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,9 +15,9 @@ export default function Home() {
         className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
       >
         <div className="z-10 max-w-5xl w-full shadow-top items-center justify-between font-mono text-sm lg:flex">
-          <button className="fixed font-semibold left-0 top-0 flex w-full justify-center border-b border-green-500 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-green-600 lg:p-4 lg:dark:bg-zinc-800/30 text-white hover:bg-green-700">
+          <Link href="/login" className="fixed font-semibold left-0 top-0 flex w-full justify-center border-b border-green-500 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-green-600 lg:p-4 lg:dark:bg-zinc-800/30 text-white hover:bg-green-700">
             Get started With Ago-Input
-          </button>
+          </Link>
           <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
             <a
               className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
@@ -28,7 +28,7 @@ export default function Home() {
               <Image
                 src="/ago-input-logo.svg"
                 alt="Vercel Logo"
-                className="dark:invert"
+                className="dark:invert logo"
                 width={50}
                 height={24}
                 priority
